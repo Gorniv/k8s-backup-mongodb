@@ -29,8 +29,6 @@ spec:
               value: {{ .Values.awsAccessKeyId | quote}}
             - name: AWS_SECRET_ACCESS_KEY
               value: {{ .Values.awsSecretAccessKey | quote }}
-            - name: AWS_DEFAULT_REGION
-              value: {{ .Values.awsDefaultRegion | quote}}
             - name: S3_ENDPOINT_URL
               value: {{ .Values.s3EndpointUrl | quote }}
             - name: PASSWORD_7ZIP

@@ -45,10 +45,3 @@ spec:
                 secretKeyRef:
                   name: aws
                   key: AWS_SECRET_ACCESS_KEY
-
-            - name: AWS_DEFAULT_REGION
-              valueFrom:
-                secretKeyRef:
-                  name: aws
-                  key: AWS_DEFAULT_REGION
-
