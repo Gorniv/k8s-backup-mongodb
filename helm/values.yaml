@@ -13,3 +13,14 @@ awsSecretAccessKey: ""
 s3EndpointUrl: ""
 awsDefaultRegion: ""
 password7Zip: ""
+
+## @param nameOverride String to partially override mongodb.fullname template (will maintain the release name)
+##
+nameOverride: ""
+## @param fullnameOverride String to fully override mongodb.fullname template
+##
+fullnameOverride: ""
+## @param namespaceOverride String to fully override common.names.namespace
+##
+namespaceOverride: ""
+## @param kubeVersion Force target Kubernetes version (using Helm capabilities if not set)
