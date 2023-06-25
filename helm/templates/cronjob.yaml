@@ -1,8 +1,8 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: backup-mongodb
-  namespace: backup-mongodb
+  name: {{ include "chart.fullname" . }}
+  namespace: {{ include "chart.namespace" . | quote }}
 spec:
   schedule: {{ .Values.schedule | quote}}
   concurrencyPolicy: Forbid

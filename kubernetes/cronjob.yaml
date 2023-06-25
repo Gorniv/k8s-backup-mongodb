@@ -1,7 +1,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: {{ include "chart.fullname" . }}
+  name: backup-mongodb
 spec:
   schedule: "0 */1 * * *"
   concurrencyPolicy: Forbid

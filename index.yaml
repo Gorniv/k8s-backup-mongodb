@@ -3,12 +3,12 @@ entries:
   k8s-backup-mongodb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-25T16:55:38.620405+06:00"
+    created: "2023-06-25T17:10:55.205948+06:00"
     description: Mongo db backup as a cronjob - helm package
-    digest: 69a2d3767cf06176bbca617e7e315bb04fe1ca3dd7e1b87cf90efe2278a4ad57
+    digest: e2c45ec4251127d13cf8a0b9243ac6211eeb7d8d750311d12413aa8adf17616a
     name: k8s-backup-mongodb
     type: application
     urls:
-    - k8s-backup-mongodb-0.1.1.tgz
-    version: 0.1.1
-generated: "2023-06-25T16:55:38.62018+06:00"
+    - k8s-backup-mongodb-0.1.2.tgz
+    version: 0.1.2
+generated: "2023-06-25T17:10:55.204497+06:00"
