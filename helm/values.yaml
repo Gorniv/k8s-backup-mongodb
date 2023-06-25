@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 schedule: "\"0 1 * * *\""
-image: "ptuladhar/k8s-backup-mongodb:latest"
+image: "gorniv/k8s-backup-mongodb:latest"
 
 withOplog: true
 mongoDbUri: ""
