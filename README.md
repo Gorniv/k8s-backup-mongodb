@@ -3,3 +3,5 @@
 
 ![](images/cover.png)
 
+helm repo add k8s-backup-mongodb https://gorniv.github.io/k8s-backup-mongodb
+
