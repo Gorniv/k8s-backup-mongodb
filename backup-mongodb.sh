@@ -34,7 +34,11 @@ echo "[$SCRIPT_NAME] Uploading compressed archive to S3 bucket..."
 aws ${S3_ENDPOINT_OPT} s3 cp "$COPY_NAME" "$BUCKET_URI/$COPY_NAME"
 
 echo "[$SCRIPT_NAME] Cleaning up compressed archive..."
+
+echo "[$SCRIPT_NAME] Removing $COPY_NAME"
 rm "$COPY_NAME"
+
+echo "[$SCRIPT_NAME] Removing $ARCHIVE_NAME"
 rm "$ARCHIVE_NAME" || true
 
 echo "[$SCRIPT_NAME] Backup complete!"
