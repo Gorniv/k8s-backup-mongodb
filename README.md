@@ -5,3 +5,6 @@
 
 helm repo add k8s-backup-mongodb https://gorniv.github.io/k8s-backup-mongodb
 
+helm install my-k8s-backup-mongodb k8s-backup-mongodb/k8s-backup-mongodb --create-namespace --namespace=my-mongodb-backup --timeout=10m0s --values=my-value.yaml --version=0.1.6
+
+my-value.yaml == filled helm/values.yaml

@@ -24,7 +24,6 @@ if [ ! -z "$PASSWORD_7ZIP" ]; then
     7za a -tzip -p"$PASSWORD_7ZIP" -mem=AES256 "$COPY_NAME" "$ARCHIVE_NAME"
 fi
 
-
 S3_ENDPOINT_OPT=""
 if [ ! -z "$S3_ENDPOINT_URL" ]; then
   S3_ENDPOINT_OPT="--endpoint-url $S3_ENDPOINT_URL"
