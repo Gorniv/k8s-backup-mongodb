@@ -1,8 +1,8 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: {{ include "chart.fullname" . }}
-  namespace: {{ include "chart.namespace" . | quote }}
+  name: {{ include "k8s-backup-mongodb.fullname" . }}
+  namespace: {{ include "k8s-backup-mongodb.namespace" . | quote }}
 spec:
   schedule: {{ .Values.schedule | quote}}
   concurrencyPolicy: Forbid

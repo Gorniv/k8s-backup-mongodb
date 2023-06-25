@@ -33,7 +33,7 @@ Create chart name and version as used by the chart label.
 {{/*
 Allow the release namespace to be overridden for multi-namespace deployments in combined charts.
 */}}
-{{- define "chart.namespace" -}}
+{{- define "k8s-backup-mongodb.namespace" -}}
     {{- if and .Values.global .Values.global.namespaceOverride -}}
         {{- print .Values.global.namespaceOverride -}}
     {{- else -}}

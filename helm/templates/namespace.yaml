@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: {{ include "chart.namespace" . | quote }}
+  name: {{ include "k8s-backup-mongodb.namespace" . | quote }}
